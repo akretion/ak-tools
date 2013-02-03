@@ -4,7 +4,7 @@ directory "/usr/local/lib/ak-lib" do
   group "root"
   owner "root"
   mode "0755"
-  notifies :run, resources(:execute => "apt-get update"), :immediately
+  notifies :run, "execute[apt-get update]", :immediately
 end
 
 template "/etc/motd" do
