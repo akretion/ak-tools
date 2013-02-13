@@ -1,4 +1,4 @@
-name              "Ak-Tools"
+name              "ak-tools"
 maintainer        "Akretion"
 maintainer_email  "contact@akretion.com"
 license           "Apache 2.0"
