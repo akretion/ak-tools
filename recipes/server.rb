@@ -17,7 +17,7 @@ end
 
 
 
-script "configure bashrc for all profile" do
+script "extend bash.bashrc with a custom aliases file" do
   interpreter "ruby"
   user "root"
   group "root"
