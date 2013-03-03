@@ -15,7 +15,12 @@ template "/etc/motd" do
   variables :product_name => node[:ak_tools][:product_name]
 end
 
-
+cookbook_file "/usr/local/bin/extract" do
+  source "extract"
+  owner "root"
+  group "root"
+  mode "0755"
+end
 
 script "extend bash.bashrc with a custom aliases file" do
   interpreter "ruby"
