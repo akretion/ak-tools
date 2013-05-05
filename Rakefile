@@ -3,9 +3,10 @@
 require 'foodcritic'
 require 'rake/testtask'
 
-#FoodCritic::Rake::LintTask.new do |t|
-#  t.options = { :fail_tags => ['any'], :tags => ['~FC041'] }
-#end
+# we want to let the RVM dependency optionnal and stick with definitions
+FoodCritic::Rake::LintTask.new do |t|
+  t.options = { :fail_tags => ['any'], :tags => ['~FC007', '~FC015'] }
+end
 
 Rake::TestTask.new do |t|
   t.name = "unit"
