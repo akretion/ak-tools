@@ -7,7 +7,7 @@ directory "/usr/local/lib/ak-lib" do
   notifies :run, "execute[apt-get update]", :immediately
 end
 
-template "/etc/motd" do
+template "/etc/update-motd.d/51-cloudguest" do
   owner "root"
   group "root"
   mode 00777
