@@ -4,6 +4,15 @@
 
 This cookbook includes Akretion base infrasture recipes
 
+It consists mainly in:
+
+* automatic apt-get update at the beginning of the server provisionning
+* a customizable set of .deb packages for compile-time and run-time dependencies
+* a customizable set of global python pip packages
+* some custom bash aliases and scripts
+* some executables in the path
+* some customizable branding
+
 ## Recipes
 
 #### server
