@@ -44,3 +44,6 @@ end
 
 
 (node[:ak_tools][:apt_packages] + node[:ak_tools][:apt_packages_extra]).each {|pack| package pack}
+
+ssh_known_hosts_entry 'github.com'
+ssh_known_hosts_entry 'launchpad.net'

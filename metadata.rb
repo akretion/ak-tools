@@ -7,6 +7,7 @@ long_description  IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version           "0.0.3"
 recipe            "ak-tools::server", "Used on servers"
 depends           "apt"
+depends           "ssh_known_hosts"
 
 %w{ ubuntu debian }.each do |os|
   supports os
