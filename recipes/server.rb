@@ -43,7 +43,7 @@ template "/etc/bash_aliases" do
 end
 
 
-(node[:ak_tools][:apt_packages] + node[:ak_tools][:apt_packages_extra]).each {|pack| package pack}
+(node[:ak_tools][:apt_packages] + node[:ak_tools][:apt_packages_extra] + node[:ak_tools][:apt_packages_env]).each {|pack| package pack}
 
 ssh_known_hosts_entry 'github.com'
 ssh_known_hosts_entry 'launchpad.net'
