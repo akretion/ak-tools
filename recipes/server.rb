@@ -46,8 +46,9 @@ end
 [:apt_packages, :apt_packages_extra, :apt_packages_env, :apt_python_packages].map do |k|
   node[:ak_tools][k]
 end.flatten.each do |p|
-  package pack
+  package p
 end
 
 ssh_known_hosts_entry 'github.com'
 ssh_known_hosts_entry 'launchpad.net'
+ssh_known_hosts_entry 'akretion.com'
